@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>	math</title>
+</head>
+<body>
+<!-- 	<script>	
+		console.log(Math.ceil(10.4));    //11   向上取整
+		console.log(Math.floor(10.9));    //10  向下取整
+		console.log(Math.round(10.9));    //11  近似值——四舍五入
+		console.log(Math.random());    //0-1取随机数
+		console.log(Math.random()*10);    //0-10取随机数
+		console.log(Math.random()*-10);//-10-0取随机数
+		for(let i=1;i<=10;i++){
+			console.log(Math.random()*-10);   //随机选出十个-10-0的
+		}
+		for(let i=1;i<=10;i++){
+			console.log(Math.random()*10+10);   //随机选出十个10-20的
+		}
+		for(let i=1;i<=10;i++){
+			console.log(Math.random()*15+5);   //随机选出十个5-20的
+		}
+		for(let i=1;i<=10;i++){
+			console.log(Math.random()*15+5);   //随机选出十个5-20的
+		}
+		for(let i=1;i<=10;i++){
+			console.log(Math.random()*10-5);   //随机选出十个-5-5的
+		}
+	</script> -->
+	<!-- <script>
+
+		function color
+
+
+		// let box = document.getElementById('box');
+		// box.onmousemove = function(){
+		// 	alert(1);
+		// }
+	</script> -->
+	<!-- <script>
+		console.log(Math.pow(2,3));     //2的3次方
+		console.log(Math.sqrt(4,2));     //4开根号2
+	</script> -->
+	<script>
+		
+	</script>
+	<script>
+		var arr = ['a','b','c','d','e'];
+		let newarr = [];
+		for(let i=0;i<3;){
+				let str = Math.floor(Math.random()*(arr.length));
+				if(!newarr.includes(arr[str])){
+					newarr.push(arr[str]);
+					i++;
+				}
+		}
+		console.log(newarr);
+		//还可以如果循环不成功，i--倒回去重新循环
+	</script>
+<!-- 如果重复，则重新循环 -->
+	<script>
+		var arr = ['a','b','c','d','e'];
+		console.log(randomArr(arr,3));
+		function randomArr(arr,num){
+			let newarr = [];
+			for(let i=0;i<num;i++){
+				let index=Math.floor(Math.random()*arr.length);
+				while(newarr.includes(arr[index])){
+					index=Math.floor(Math.random()*arr.length);
+				}
+				newarr.push(arr[index]);
+			}
+			return newarr;
+		}
+	</script>
+
+	<!-- 如果不包含则放入新数组 -->
+	<script>
+		var arr = ['a','b','c','d','e'];
+		console.log(randomArr(arr,3));
+		function randomArr(arr,num){
+			let newarr = [];
+			for(let i=0;i<num;){
+				let index = Math.floor(Math.random()*arr.length);
+				if(!newarr.includes(arr[index])){
+					newarr.push(arr[index]);
+					i++;
+				}
+			}
+			return newarr;
+		}
+	</script>
+	<!-- i--的方法 -->
+	<script>
+		var arr = ['a','b','c','d','e'];
+		console.log(randomArr(arr,3));
+		function randomArr(arr,num){
+			let newarr = [];
+			for(let i=0;i<num;i++){
+				let index = Math.floor(Math.random()*arr.length);
+				if(newarr.includes(arr[index])){
+					i--;
+				}else{
+					newarr.push(arr[index]);
+				}
+			}
+			return newarr;
+		}
+	</script>
+</body>
+</html>

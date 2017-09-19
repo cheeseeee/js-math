@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Array</title>
+</head>
+<body>
+
+<!-- 	<script>
+		function Person(){
+			this.name = 'zhangsan';
+			this.age = 18;
+		}
+		Person.prototype = {
+			study function{
+				alert('学习');
+			}
+		}
+		Person.prototype.say = function(){
+				alert('说话')；
+		}
+		let zhangsan = new Person();
+		console.log(Person.name);
+	</script> -->
+
+<!-- 	<script>
+		let arr = [1,2,3,4,5,6];
+		let arr1 = ['j','z','g'];
+		arr.push(...arr1);   ///...剩余参数
+		console.log(arr);
+	</script>
+	<script>
+		let arr2 = [1,2,3,4,5,6];
+		let arr3 = ['j','z','g'];
+		let newarr = [];
+		newarr = arr2.concat(arr3);
+		console.log(newarr);
+	</script>
+	<script>
+		let arr4 = [1,2,3,4,5,6];
+		console.log(arr4.reverse());
+	</script>
+	<script>
+		let arr5 = [1,2,3,4,5,6,102,25];
+		arr.sort(function(a,b){
+			return a - b < 0;
+		})
+		console.log(arr5);
+	</script>
+	<script>
+		let arr6 = [1,2,3,4,5,6,102,25];
+		let sum = 0;
+		arr6.forEach(function(value,index,obj){
+			sum = sum + value;
+		})
+		console.log(sum);
+	</script>
+	<script>
+		let arr7 = [1,2,3,4,5,6,102,25];
+		let sum1 = 0;
+		let str = arr7.filter(function(value,index,obj){
+			return value%2 == 0;
+		})
+		console.log(str);
+	</script>
+	<script>
+		let arr8 = [1,2,3,4,5,6,102,25];
+		let map =arr8.map(function(value,index,obj){
+			return value+index;
+		}) 
+		console.log(map);
+	</script> -->
+	<!-- <script>
+		let arr9 = [1,2,3,4,5,6,102,25];
+		let map1 = arr9.map1((value,index) => value+index);
+		console.log(map1);
+	</script> -->
+	<!-- <script>
+		let fn = (num)=> {return {name:'zhangsan',age:18}};
+		let aa = (num)=> {
+			return {name:num};
+		}
+		console.log(aa(12));
+		console.log(fn())
+	</script> -->
+<!-- 	<script>
+		// let arr10 = [1,2,3,3,4,5,1,5,6];
+		let arr11 = [1,2,3,3,4,5,1,5,6];
+		let result = six(arr11);
+		console.log(result);
+
+		function six(arr10){
+			let neww = [];
+			for(let i=0;i<arr10.length;i++){
+				if(!neww.includes(arr10[i])){
+					neww.push(arr10[i]);
+				}
+			}
+			return neww;
+		}
+	</script> -->
+<!-- 	<script>
+		let arr12 = [1,2,3,3,4,5,1,5,6];
+		let result = one(arr12);
+		console.log(result);
+		function one(arr){
+			let neww1 = [];
+			for(let i=0;i<arr.length;i++){
+				let flag = true;
+				for(let j=i+1;j<arr.length;j++){
+					if(arr[j]==arr[i]){
+						flag = false;
+						break;
+					}
+				}
+				if(flag){
+					neww1.push(arr[i]);
+				}
+			}
+			return neww1;
+		}
+	</script> -->
+	<script>
+		let arr12 = [1,2,3,3,4,5,1,5,6];
+		Array.prototype.one = function(){
+		function one(arr){
+			let neww1 =
+
+			  [];
+			for(let i=0;i<this.length;i++){
+				l
+				et flag = true;
+				for(let j=i+1;j<this.length;j++){
+					if(this[j]==this[i]){
+						flag = false;
+						break;
+					}
+				}
+				if(flag){
+					neww1.push(this[i]);
+				}
+			}
+			return neww1;
+		}
+		}
+		let result = arr12.one();
+		console.log(result);
+	</script>
+
+	
+</body>
+</html>
